@@ -78,7 +78,7 @@ fun Input(modifier: Modifier = Modifier){
             placeholder = { Text(text = "Isi Email Anda")
             },
             modifier = Modifier.fillMaxWidth().padding(5.dp),
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
 
         )
 
