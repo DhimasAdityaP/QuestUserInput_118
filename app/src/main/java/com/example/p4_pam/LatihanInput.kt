@@ -56,13 +56,16 @@ fun Input(modifier: Modifier = Modifier){
             modifier = Modifier.fillMaxWidth().padding(5.dp)
 
         )
-        dataGender.forEach{selectedGender ->
-            Row{
-                RadioButton(
-                    selected = gender == selectedGender,
-                    onClick = {gender = selectedGender}
-                )
-                Text(text = selectedGender)}
+        Row (modifier = Modifier.fillMaxWidth()){
+            dataGender.forEach { selectedGender ->
+                Row (verticalAlignment = Alignment.CenterVertically){
+                    RadioButton(
+                        selected = gender == selectedGender,
+                        onClick = { gender = selectedGender }
+                    )
+                    Text(text = selectedGender)}
+            }
+
         }
 
 
